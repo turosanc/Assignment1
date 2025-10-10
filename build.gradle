@@ -1,0 +1,35 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application {
+    // Use the fully qualified class name, including the package
+    mainClass = 'Main'
+}
+
+tasks.named('run') {
+    // Forward standard input so Scanner(System.in) works
+    standardInput = System.in
+}
+
+tasks.register('runGame', JavaExec) {
+    group = 'application'
+    description = 'Run guessing game'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass.set('Main')
+    standardInput = System.in
+}

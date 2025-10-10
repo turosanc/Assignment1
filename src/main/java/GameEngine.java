@@ -28,9 +28,9 @@ public class GameEngine {
             gameWon = true;
             return new GuessResult(true, "Correct! You guessed it in " + attempts + " attempts.", attempts);
         } else if (guess < target) {
-            return new GuessResult(false, "Too low!", attempts);
+            return new GuessResult(false, "Too low! Try a higher number.", attempts);
         } else {
-            return new GuessResult(false, "Too high!", attempts);
+            return new GuessResult(false, "Too high! Try a lower number.", attempts);
         }
     }
 

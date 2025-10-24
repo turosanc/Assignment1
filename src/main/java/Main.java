@@ -6,7 +6,7 @@ public class Main {
 <<<<<<< HEAD
         // Version 1.1 - Added quit functionality
 =======
-        System.out.println("=== Welcome to the Number Guessing Game! ===");
+        System.out.println("Good luck!");
 >>>>>>> dev
 
         Scanner scanner = new Scanner(System.in);

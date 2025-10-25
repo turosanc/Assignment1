@@ -14,3 +14,22 @@ dev - adds an encouragement message for players
 
 hotfix - Fixes issue with randomInt include max value of range
 
+LEARNING SUMMARY
+
+Merge - combines separate branches with overlapping functions
+
+Rebase - rewrites where the branches came from, sorta like merge\
+except the there is a direct pointer to the new base.
+
+Squash - cleans up commits in a branch, makes reads logs easier. \
+feature1 had an issue with bad commit messages, squash is useful \
+in this case to make comments clearer
+
+cherry-pick - Like the name implies, it only commits certain parts \
+of a branch 
+
+Git history for features - The difference observed between the features \
+was the progressive degradation of commit messages. Feature1 did not \
+provide any insightful commit messages. Less code changes were seen \
+between feature1 - feature3
+
